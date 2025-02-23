@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch and display chart data
     async function fetchAndDisplayChart() {
         try {
-            const response = await fetch('/.netlify/functions/update-stats', { // Correct URL
+            const response = await fetch('netlify/functions/update-stats', { // Correct URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to send data to the Netlify function
     async function sendData(action) {
         try {
-            const response = await fetch('/.netlify/functions/update-stats', { // Correct URL
+            const response = await fetch('netlify/functions/update-stats', { // Correct URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
