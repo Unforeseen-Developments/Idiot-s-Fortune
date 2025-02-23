@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerizekalı Falı - Türkçe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+
+    <header>
+        <div class="lang-select">
+            <a href="index.html" class="lang-btn" data-lang="en"><span class="flag">🇺🇸</span> English</a>
+            <a href="index_es.html" class="lang-btn" data-lang="es"><span class="flag">🇪🇸</span> Español</a>
+            <a href="index_de.html" class="lang-btn" data-lang="de"><span class="flag">🇩🇪</span> Deutsch</a>
+            <a href="index_tr.html" class="lang-btn active" data-lang="tr"><span class="flag">🇹🇷</span> Türkçe</a>
+            <a href="index_ar.html" class="lang-btn" data-lang="ar"><span class="flag">🇸🇦</span> العربية</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="initial-section">
+            <h1 data-lang="fortuneTitle">Gerizekalı Falı</h1>
+            <button id="fortune-button" data-lang="fortuneButton">Falına Bak!</button>
+        </section>
+
+        <section id="fortune-section" class="hidden">
+            <div id="fortune-message"></div>
+            <div id="belief-question" class="hidden">
+                <p data-lang="beliefQuestion">Bu Fal'a İnandın mı?</p>
+                <div class="button-group">
+                    <button id="yes-button" data-lang="yesButton">Evet</button>
+                    <button id="no-button" data-lang="noButton">Hayır</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="response-section" class="hidden">
+            <div id="response-message"></div>
+        </section>
+
+        <section id="stats-section" class="hidden">
+            <h2 data-lang="statsTitle">Idiot Statistics</h2>
+            <div class="chart-container">
+                <canvas id="statsChart"></canvas>  <!-- Add canvas for the chart -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footerText">© 2024 Gerizekalı Falı - Tamamen Eğlence Amaçlıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
